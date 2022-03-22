@@ -30,9 +30,14 @@ Use getFinals to do the following:
 💡 HINT - you should be looking at the stage key inside of the objects
 */
 
-function getFinals(/* code here */) {
-    /* code here */
+function getFinals(array) {
+    const finals = array.filter((data) => {
+        return data.Stage === 'Final';
+    });
+    return finals;
  }
+
+ console.log('Task 2:', getFinals(fifaData));
 
 
 
